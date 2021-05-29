@@ -1,8 +1,5 @@
 # -*- coding: utf-8 -*-
-"""
-Created on Fri May 28 23:19:12 2021
-@author: Ramello
-"""
+
 #hasn't worked since Amazon's bot detection doesn't like web scraping :(
 #may find some success if you change user agent, but a better solution is probably to work with the amazon API, or even scrapy
 
