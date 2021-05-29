@@ -1,11 +1,4 @@
 # -*- coding: utf-8 -*-
-"""
-Created on Fri May 28 16:32:01 2021
-
-@author: Ramello
-"""
-
-
 import scrapy
 
 class RedditSpider(scrapy.Spider):
