@@ -1,4 +1,6 @@
-# -*- coding: utf-8 -*-
+#Scrapes images off the front page of r/food
+
+
 import scrapy
 
 class RedditSpider(scrapy.Spider):
