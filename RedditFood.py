@@ -1,9 +1,4 @@
-# -*- coding: utf-8 -*-
-"""
-Created on Fri May 28 16:32:01 2021
-
-@author: Ramello
-"""
+#Scrapes images off the front page of r/food
 
 
 import scrapy
