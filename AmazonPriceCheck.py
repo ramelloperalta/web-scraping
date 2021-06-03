@@ -1,7 +1,7 @@
 # -*- coding: utf-8 -*-
 
-#hasn't worked since Amazon's bot detection doesn't like web scraping :(
-#may find some success if you change user agent, but a better solution is probably to work with the amazon API, or even scrapy
+#hasn't worked since Amazon's bot detection, prohibition of scraping on their site
+#need to work with Amazon's API
 
 import requests
 from bs4 import BeautifulSoup
