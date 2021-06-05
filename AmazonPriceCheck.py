@@ -32,7 +32,9 @@ def send_mail():
     server.starttls()
     server.ehlo()
     
-    server.login('ramelloperalta@gmail.com', 'aflsyairkyigfcgj')
+    server.login('ramelloperalta@gmail.com',
+                 'INSERT APP PASSWORD HERE' ##app password from google 
+                )
     subject = 'Price fell on the Macbook'
     body = 'Check it out! ' + URL
     
