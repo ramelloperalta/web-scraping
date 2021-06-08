@@ -7,6 +7,7 @@ import requests
 from bs4 import BeautifulSoup
 import smtplib
 
+
 URL = 'https://www.amazon.ca/Apple-MacBook-Retina-MPTV2LL-Refurbished/dp/B07JMNNNWH/ref=sr_1_10?dchild=1&keywords=macbook+pro&qid=1622258203&sr=8-10'
 
 headers = {'User-Agent':'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/90.0.4430.212 Safari/537.36'}
@@ -26,6 +27,7 @@ def check_price():
     print(converted_price)
     print(title.strip())
 
+#send an email when the price drops    
 def send_mail():
     server = smtplib.SMTP('smtp.gmail.com', 587)
     server.ehlo()
@@ -33,7 +35,7 @@ def send_mail():
     server.ehlo()
     
     server.login('ramelloperalta@gmail.com',
-                 'INSERT APP PASSWORD HERE' ##app password from google 
+                 ##'INSERT APP PASSWORD HERE' 
                 )
     subject = 'Price fell on the Macbook'
     body = 'Check it out! ' + URL
